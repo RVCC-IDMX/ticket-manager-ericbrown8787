@@ -1,6 +1,13 @@
-import chalk from 'chalk';
+import EventEmitter from 'events';
 
-const { log } = console;
+class TicketManager extends EventEmitter {
+  constructor(supply) {
+    super();
+    this.supply = supply;
+  }
 
-// log(chalk.red('This is some red text right here'));
-// log(chalk.magenta('This sure is some magenta text right here'));
+  buy(email, price) {
+    this.supply -= 1;
+    this.emit('buy', email, price, Date.now());
+  }
+}
