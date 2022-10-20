@@ -31,5 +31,9 @@
     "events": {
       "start": "cls || clear"
     }
-  }
+  },
+  "dependencies": {
+    "chalk": "^5.1.2"
+  },
+  "type": "module"
 }
