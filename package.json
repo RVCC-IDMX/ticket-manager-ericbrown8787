@@ -33,7 +33,6 @@
     }
   },
   "dependencies": {
-    "chalk": "^5.1.2"
-  },
-  "type": "module"
+    "chalk": "^4.1.2"
+  }
 }
