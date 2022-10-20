@@ -8,3 +8,4 @@ class DatabaseService {
     (email, price, created) VALUES (${email}, ${price}, ${timestamp})`));
   }
 }
+module.exports = DatabaseService;

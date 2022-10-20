@@ -7,3 +7,5 @@ class EmailService {
     log(chalk.magenta(`Sending email to ${email}`));
   }
 }
+
+module.exports = EmailService;
