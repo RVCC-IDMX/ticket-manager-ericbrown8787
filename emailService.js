@@ -4,7 +4,7 @@ const { log } = console;
 
 class EmailService {
   static send(email) {
-    log(chalk.magenta(`Sending email to ${email}`));
+    log(chalk.green.italic(`Sending email to ${email}`));
   }
 }
 
